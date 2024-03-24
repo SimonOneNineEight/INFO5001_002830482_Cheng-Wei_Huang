@@ -1,0 +1,9 @@
+.main {
+  -fx-background-color: #222;
+  -fx-background-radius: 20;
+}
+
+.highlight {
+  -fx-background-color: #fff;
+  -fx-background-color: 20;
+}
