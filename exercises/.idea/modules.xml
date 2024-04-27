@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/exercise5/FactoryPattern/FactoryPattern.iml" filepath="$PROJECT_DIR$/exercise5/FactoryPattern/FactoryPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise5/ObserverPattern/ObserverPattern.iml" filepath="$PROJECT_DIR$/exercise5/ObserverPattern/ObserverPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise5/SingletonPattern/SingletonPattern.iml" filepath="$PROJECT_DIR$/exercise5/SingletonPattern/SingletonPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercise0/exercise0.iml" filepath="$PROJECT_DIR$/exercise0/exercise0.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercise1/exercise1.iml" filepath="$PROJECT_DIR$/exercise1/exercise1.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercise2/exercise2.iml" filepath="$PROJECT_DIR$/exercise2/exercise2.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercise4/exercise4.iml" filepath="$PROJECT_DIR$/exercise4/exercise4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise5/exercise5.iml" filepath="$PROJECT_DIR$/exercise5/exercise5.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/exercises.iml" filepath="$PROJECT_DIR$/.idea/exercises.iml" />
     </modules>
   </component>
