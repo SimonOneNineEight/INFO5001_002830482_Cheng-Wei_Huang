@@ -1,4 +1,4 @@
-package info5100.number_recognition2.view;
+package info5100.numberrecognizor.model;
 
 public class Point {
   private double x;

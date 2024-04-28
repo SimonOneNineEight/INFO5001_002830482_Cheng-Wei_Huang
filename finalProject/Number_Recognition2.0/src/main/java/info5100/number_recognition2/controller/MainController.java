@@ -1,8 +1,10 @@
 package info5100.number_recognition2.controller;
 
-import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.paint.Color;
+import info5100.number_recognition2.model.NumberRecognizer;
+import info5100.number_recognition2.model.Point;
+import info5100.number_recognition2.model.ImageProcessor;
+import javafx.scene.control.Alert;
+import javafx.scene.image.Image;
 import javafx.scene.shape.*;
 
 import info5100.number_recognition2.view.*;
@@ -36,6 +38,8 @@ public class MainController {
       drawArea.clearLines();
       drawArea.draw();
     });
+    view.getRecognizeButton().setOnAction(e -> this.recognizeNumber());
+
   }
 
   private void initializeCanvasListeners() {
@@ -101,5 +105,28 @@ public class MainController {
         return null;
     }
   }
+
+  private void recognizeNumber() {
+    NumberRecognizer recognizer = new NumberRecognizer();
+    // Get the image data from the canvas
+    Image image = view.getDrawArea().snapshot(null, null);
+
+    // Convert the image to a format suitable for your number recognition model or API
+    // For example, you can save the image to a file and then load it
+    // or convert it to a byte array
+    // Here, we assume you have a method called `recognizeNumber` in the `NumberRecognizer` class
+    float[][] imageData = ImageProcessor.convertImageToFloatArray(image);
+    int recognizedNumber = recognizer.recognizeNumber(imageData);
+
+    System.out.println(recognizedNumber);
+
+    // Display the recognized number in an alert
+    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+    alert.setTitle("Number Recognition");
+    alert.setHeaderText(null);
+    alert.setContentText("Recognized Number: " + recognizedNumber);
+    alert.showAndWait();
+  }
+
 }
 
